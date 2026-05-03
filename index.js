@@ -39,9 +39,9 @@ app.use((req, res, next) => {
   console.log('----------------------------------------');
   next(); // Don't forget to call next() to continue to the next middleware
 });
-
+ 
 // Clerk Middleware (attaches auth to req.auth)
-app.use(clerkMiddleware());
+app.use(clerkMiddleware()); 
 
 // MongoDB connection
 const MONGO_URI = process.env.MONGO_URI;

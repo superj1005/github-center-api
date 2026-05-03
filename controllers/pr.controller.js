@@ -143,7 +143,7 @@ Respond in this JSON format:
 }
 `;
 
-  const model = gemini.getGenerativeModel({ model: "gemini-2.0-flash" });
+  const model = gemini.getGenerativeModel({ model: "gemini-2.5-flash" });
 
   // Pass prompt as plain string
   const result = await model.generateContent(prompt);

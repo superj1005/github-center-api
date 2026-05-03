@@ -18,6 +18,7 @@ router.post("/create", async (req, res) => {
       await newUser.save();
     }
 
+
     res.status(200).json({ message: "User stored in MongoDB" });
   } catch (err) {
     console.error("Webhook Error:", err);
